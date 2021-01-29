@@ -1,0 +1,122 @@
+\documentclass[11pt]{book}
+\usepackage[left=1.0in,right=1.0in,top=1in,bottom=1in]{geometry}
+\usepackage[font=footnotesize,labelfont=bf]{caption} 
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{epigraph}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage[font=small,labelfont=bf, size=footnotesize]{caption}
+\usepackage[export]{adjustbox}
+\usepackage[superscript]{cite}
+\usepackage{setspace}
+\usepackage{ragged2e} 
+
+
+\bibliographystyle{plain}
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{Page \thepage \hspace{0.01in} of \pageref{LastPage}}
+\cfoot{\thepage}
+
+\graphicspath{ {figs/} }
+
+\author{Your Name}
+\title{Dissertation Title}
+\rhead{Your Name Header}
+\lhead{Dissertation Title Header}
+
+
+\begin{document}
+
+%\maketitle
+
+\frontmatter
+\pagenumbering{gobble}
+
+\thispagestyle{empty}
+
+\center
+\vspace*{1in}
+\huge{Your Dissertation Title} \\
+\vspace{1in}
+\Large{Your Full Name} \\
+\vspace{2in}
+\normalsize
+A DISSERTATION \\
+\vspace{0.5in}
+Presented to \\
+The Department of Biomedical Engineering \\
+Oregon Health \& Science University \\
+School of Medicine \\
+\vspace{0.25in}
+In partial fulfillment of\\
+the requirements for the degree of \\
+\vspace{0.25in}
+Doctor of Philosophy \\
+\vspace{\fill}
+August, 2020
+
+
+\newpage
+\thispagestyle{empty}
+\Large{Certificate of Approval}
+\normalsize
+\justify
+
+\newpage
+% Dedication
+\vspace*{\fill}
+To someone important
+\vspace*{\fill}
+
+
+\pagenumbering{roman}
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\doublespacing
+
+\chapter*{Acknowledgements}
+\input{chapters/acknowledgments}
+
+\chapter*{Abstract}
+\input{chapters/abstract}
+
+\mainmatter
+
+\chapter{Introduction}
+\input{chapters/introduction}
+
+
+\chapter{Chapter Two Title}
+\input{chapters/chapter02}
+
+ 
+\chapter{Chapter Three Title}
+\input{chapters/chapter03}
+
+ 
+\chapter{Chapter Four Title}
+\input{chapters/chapter04}
+
+ 
+\chapter{Conclusion}
+\input{chapters/conclusion}
+
+\singlespacing
+\bibliographystyle{unsrt}
+\bibliography{bib}
+
+
+\end{document}
