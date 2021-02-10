@@ -21,7 +21,6 @@ See, a full line break.
 \section{A basic section header}
 
 Text goes here. 
-If you don't like the epigraph above, replace it, or delete it. 
 By default, new sections are numbered. 
 Don't like numbers? 
 Use an asterisk to remove them, like this:
@@ -107,16 +106,15 @@ Equations can obviously get very complicated, but the basic structure is to wrap
 a = 10
 \end{equation}
 
-Here's an example of the pretty equation describing the loss term of my favorite deep learning model.
+Equations can get complicated quickly, so it might be best to consult your nearest Google for help. However, this example below illustrates how special characters, subscripts, and superscripts are easily configured.
+Also importantly, just like figures and tables, equations can also be given a label that can be referenced in text, such as Equation \ref{eq:vaeloss}.
 
 \begin{equation} 
 \label{eq:vaeloss}
 \mathcal{L}_i(x_i, \theta, \phi) = -\mathbb{E}_{z\sim q_\theta(z|x_i)}[\log p_\phi (x_i | z)] + \text{KL}(q_\theta(z|x_i)\|p(z))
 \end{equation}
 
-See Google for any specific help writing equations.
 The syntax can feel like a lot, but the syntax for generating complex equations is extremely powerful and is the gold standard for mathematical writing. 
-
 
 \section{Lists}
 
